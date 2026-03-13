@@ -1,197 +1,150 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Landing Page Rokaya Salah</title>
-
+<title>Rokaya Salah | Projects</title>
 <style>
+    /* ====== General Styles ====== */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+        color: #333;
+        transition: background 0.5s ease;
+    }
 
-body{
-font-family: Arial;
-margin:0;
-background: linear-gradient(135deg,#f5f7fa,#e4ecf7);
-color:#333;
-}
+    header {
+        background: linear-gradient(90deg, #4CAF50, #2E8B57);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
 
-/* header */
+    header h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
 
-header{
-background: linear-gradient(135deg,#667eea,#764ba2);
-color:white;
-text-align:center;
-padding:100px 20px;
-}
+    nav {
+        background-color: #333;
+        overflow: hidden;
+    }
 
-header h1{
-font-size:45px;
-margin:0;
-}
+    nav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 16px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
 
-header p{
-font-size:20px;
-margin-top:10px;
-}
+    nav a:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
 
-.btn{
-display:inline-block;
-background:white;
-color:#764ba2;
-padding:14px 28px;
-margin-top:25px;
-text-decoration:none;
-font-weight:bold;
-border-radius:30px;
-transition:0.3s;
-}
+    section {
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
 
-.btn:hover{
-transform:scale(1.05);
-}
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2.2em;
+        color: #2E8B57;
+    }
 
-/* sections */
+    /* ====== Project Cards ====== */
+    .project {
+        background: white;
+        margin-bottom: 50px;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
 
-section{
-padding:70px 20px;
-text-align:center;
-}
+    .project:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
 
-section h2{
-font-size:32px;
-margin-bottom:20px;
-}
+    .project h3 {
+        color: #4CAF50;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
 
-/* features */
+    .project p {
+        font-size: 1em;
+        line-height: 1.6;
+        color: #555;
+    }
 
-.features{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-margin-top:40px;
-}
+    .project img {
+        max-width: 90%;
+        max-height: 400px;
+        border-radius: 10px;
+        margin-top: 20px;
+        transition: transform 0.4s, box-shadow 0.4s;
+    }
 
-.feature{
-background:white;
-padding:30px;
-width:250px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-transition:0.3s;
-}
+    .project img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
 
-.feature:hover{
-transform:translateY(-10px);
-}
-
-/* contact */
-
-#contact a{
-color:#667eea;
-font-weight:bold;
-text-decoration:none;
-}
-
-#contact a:hover{
-text-decoration:underline;
-}
-
-/* whatsapp button */
-
-.whatsapp{
-display:inline-block;
-margin-top:15px;
-background:#25D366;
-color:white;
-padding:12px 25px;
-border-radius:25px;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* footer */
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
+    /* ====== Responsive ====== */
+    @media(max-width:768px){
+        header h1 { font-size: 2.2em; }
+        .project h3 { font-size: 1.5em; }
+        .project img { max-height: 300px; }
+    }
 
 </style>
-
 </head>
-
 <body>
 
 <header>
-
-<h1>مرحبا! أنا رقية صلاح</h1>
-
-<p>
-
-  HTML و CSS  مطور ويب مبتدئة أصنع صفحات جذابة باستخدام 
-</p>
-
-<a href="#contact" class="btn">تواصل معي</a>
-
+    <h1>Rokaya Salah</h1>
+    <p>My Projects Portfolio</p>
 </header>
 
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
 <section>
+    <h2>Projects I’ve Worked On</h2>
 
-<h2>مميزات خدمتي</h2>
+    <div class="project">
+        <h3>Flutter Mobile App</h3>
+        <p>This is a simple Flutter mobile app I created to track tasks and improve productivity. It includes a clean user interface, navigation, and basic state management.</p>
+        <img src="image/1.jpeg" alt="Flutter Mobile App Screenshot">
+    </div>
 
-<div class="features">
+    <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>I built this portfolio website to showcase my projects, skills, and contact information. It uses HTML, CSS, and is deployed on GitHub Pages.</p>
+        <img src="image/2.jpeg" alt="Portfolio Website Screenshot">
+    </div>
 
-<div class="feature">
-<h3>تصميم عصري</h3>
-<p>صفحات ويب حديثة وجذابة تناسب جميع الأجهزة.</p>
-</div>
-
-<div class="feature">
-<h3>متجاوب</h3>
-<p>الموقع يعمل بشكل ممتاز على الموبايل والتابلت.</p>
-</div>
-
-<div class="feature">
-<h3>كود نظيف</h3>
-<p>كود منظم وسهل التعديل لأي مشروع.</p>
-</div>
-
-</div>
+    <div class="project">
+        <h3>IT Training Exercises</h3>
+        <p>These are small projects and exercises I completed as part of my IT training, including basic programming tasks, networking exercises, and web development practice.</p>
+        <img src="image/3.jpeg" alt="IT Training Exercises Screenshot">
+    </div>
 
 </section>
-
-<section id="contact">
-
-<h2>تواصل معي</h2>
-
-<p>
-البريد الإلكتروني:
-<a href="mailto:rqyhs5886@gmail.com">
-rqyhs5886@gmail.com
-</a>
-</p>
-
-<p>
-<a class="whatsapp" href="https://wa.me/201100572272" target="_blank">
-التواصل على واتساب
-</a>
-</p>
-
-<p>
-GitHub:
-<a href="https://github.com/Rokaya-Salah" target="_blank">
-github.com/Rokaya-Salah
-</a>
-</p>
-
-</section>
-
-<footer>
-
-جميع الحقوق محفوظة © 2026 رقية صلاح
-
-</footer>
 
 </body>
