@@ -1,9 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Landing Page Rokaya Salah</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background: linear-gradient(135deg,#f5f7fa,#e4ecf7);
+color:#333;
+}
+
+/* header */
+
+header{
+background: linear-gradient(135deg,#667eea,#764ba2);
+color:white;
+text-align:center;
+padding:100px 20px;
+}
+
+header h1{
+font-size:45px;
+margin:0;
+}
+
+header p{
+font-size:20px;
+margin-top:10px;
+}
+
+.btn{
+display:inline-block;
+background:white;
+color:#764ba2;
+padding:14px 28px;
+margin-top:25px;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* sections */
+
+section{
+padding:70px 20px;
+text-align:center;
+}
+
+section h2{
+font-size:32px;
+margin-bottom:20px;
+}
+
+/* features */
+
+.features{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.feature{
+background:white;
+padding:30px;
+width:250px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.feature:hover{
+transform:translateY(-10px);
+}
+
+/* contact */
+
+#contact a{
+color:#667eea;
+font-weight:bold;
+text-decoration:none;
+}
+
+#contact a:hover{
+text-decoration:underline;
+}
+
+/* whatsapp button */
+
+.whatsapp{
+display:inline-block;
+margin-top:15px;
+background:#25D366;
+color:white;
+padding:12px 25px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* footer */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
 <body>
 
-<h1>Rokaya Salah</h1>
-<p>My first website</p>
+<header>
+
+<h1>مرحبا! أنا رقية صلاح</h1>
+
+<p>
+
+  HTML و CSS  مطور ويب مبتدئة أصنع صفحات جذابة باستخدام 
+</p>
+
+<a href="#contact" class="btn">تواصل معي</a>
+
+</header>
+
+<section>
+
+<h2>مميزات خدمتي</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>تصميم عصري</h3>
+<p>صفحات ويب حديثة وجذابة تناسب جميع الأجهزة.</p>
+</div>
+
+<div class="feature">
+<h3>متجاوب</h3>
+<p>الموقع يعمل بشكل ممتاز على الموبايل والتابلت.</p>
+</div>
+
+<div class="feature">
+<h3>كود نظيف</h3>
+<p>كود منظم وسهل التعديل لأي مشروع.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>تواصل معي</h2>
+
+<p>
+البريد الإلكتروني:
+<a href="mailto:rqyhs5886@gmail.com">
+rqyhs5886@gmail.com
+</a>
+</p>
+
+<p>
+<a class="whatsapp" href="https://wa.me/201100572272" target="_blank">
+التواصل على واتساب
+</a>
+</p>
+
+<p>
+GitHub:
+<a href="https://github.com/Rokaya-Salah" target="_blank">
+github.com/Rokaya-Salah
+</a>
+</p>
+
+</section>
+
+<footer>
+
+جميع الحقوق محفوظة © 2026 رقية صلاح
+
+</footer>
 
 </body>
-</html>
